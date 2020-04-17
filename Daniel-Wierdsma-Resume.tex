@@ -1,0 +1,144 @@
+% Copyright 2020 Daniel Wierdsma
+%
+% Licensed under the Apache License, Version 2.0 (the "License");
+% you may not use this file except in compliance with the License.
+% You may obtain a copy of the License at
+%
+%    http://www.apache.org/licenses/LICENSE-2.0
+%
+% Unless required by applicable law or agreed to in writing, software
+% distributed under the License is distributed on an "AS IS" BASIS,
+% WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+% See the License for the specific language governing permissions and
+% limitations under the License.
+
+%% Extended Article for font-size
+\documentclass[9pt]{extarticle}
+
+%% Black and White vs Design
+%\newcommand*{\PRINT}{}
+
+%% Font
+\usepackage[T1]{fontenc}
+\usepackage{ebgaramond}
+\usepackage{fontawesome}
+\usepackage[sfdefault]{FiraSans} %% option 'sfdefault' activates Fira Sans as the default text font
+\usepackage[T1]{fontenc}
+\renewcommand*\oldstylenums[1]{{\firaoldstyle #1}}
+
+\makeatletter
+\newcommand\HUGE{\@setfontsize\Huge{20pt}{24pt}}
+\makeatother
+
+%% Packages
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{comment}
+\usepackage{enumitem}
+\usepackage{setspace}
+\usepackage{scrextend}
+\usepackage{tabto}
+\usepackage[margin=1in]{geometry}
+\usepackage{tabularx}
+\usepackage[hidelinks]{hyperref}
+
+%% Page Indentation and Line Spacing
+\setlength{\parskip}{10pt}
+\setlength{\parindent}{0pt}
+\linespread{1.1}
+\pagenumbering{gobble}
+\addtolength{\topmargin}{-0.25in}
+\addtolength{\textheight}{0.75in}
+
+%% Custom Colours
+\definecolor{linkblue}{RGB}{6,69,173}
+\definecolor{darkgrey}{RGB}{75,75,75}
+\definecolor{mediumgrey}{RGB}{102,102,102}
+
+\ifdefined\PRINT
+    \definecolor{em-light}{RGB}{0,0,0}
+    \definecolor{lightgrey}{RGB}{225,225,225}
+\else
+    \definecolor{em-light}{RGB}{25,130,232}
+    \definecolor{lightgrey}{RGB}{25,130,232}
+\fi
+
+%% Word Wrap
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+
+\begin{document}
+
+%%Begin%% Header
+{
+    \begin{tabularx}{\textwidth}{Xr}
+    {\HUGE\leavevmode\color{em-light} Daniel Wierdsma} &
+        \null\hfill\small\begin{tabular}{llX}
+            \faMapMarker\space\space\space\color{darkgrey} Toronto, Ontario, Canada & \faEnvelope\space\space\color{darkgrey} \href{mailto:dan.wierdsma@gmail.com}{dan.wierdsma@gmail.com} \\[3px]
+            \faGithub\space\space\color{darkgrey} \href{https://github.com/d-wierdsma}{github.com/d-wierdsma} & {\large\faMobilePhone}\space\space\space\color{darkgrey} +1 (519) 635 4151 \\[10px]
+        \end{tabular}
+    \end{tabularx}
+
+    {\color{lightgrey}{\centerline{\rule{17cm}{0.4pt}}}}
+}
+%%End%% Header
+%%Begin%% Body
+{
+    %%Begin%% Programming
+    \begin{LARGE}
+        \color{em-light}\textbf{\\[-15pt]{\firamedium Development Experience}\\[-10pt]}
+    \end{LARGE}
+
+    \begin{tabularx}{\textwidth}{llX}
+    \faDesktop\space\space{\bfseries {\firamedium Back End}}
+        & {\color{darkgrey} \textbullet\space\space Python, Go, Node.js, PHP, Ruby, C++, Java} & \\[10pt]
+    \faDatabase\space\space{\bfseries {\firamedium Databases}}
+        & {\color{darkgrey} \textbullet\space\space RDS, Aurora, CloudSQL, MySQL, DynamoDB, Redis, Beanstalkd} & \\[10pt]
+    \faCogs\space\space{\bfseries {\firamedium DevOps Tools}}       
+        & {\color{darkgrey} \textbullet\space\space Make, Bash, Git, Jenkins, Gitlab CI, NGINX, Apache, Chef, Serverless Framework} & \\[5pt]
+        & {\color{darkgrey} \textbullet\space\space Docker, Kubernetes, Terraform, Helm, Istio, Prometheus, Thanos, Grafana, AlertManager} & \\[10pt]
+    \faLinux\space\space{\bfseries {\firamedium Environments}}       
+        & {\color{darkgrey} \textbullet\space\space AWS: EC2, ECS, CloudFormation, Route53, S3, Lambda, CloudWatch, Lambda, etc.} & \\[5pt]
+        & {\color{darkgrey} \textbullet\space\space GCP: GKE, KMS, Cloud Storage, StackDriver, Compute Engine, Pub-Sub, etc.} & \\[5pt] 
+        & {\color{darkgrey} \textbullet\space\space GNU/Linux (Ubuntu, Alpine, CentOS), Windows, MacOS} & \\[10pt]
+    \faBook\space\space{\bfseries {\firamedium Fundamentals}}      & {\color{darkgrey} \textbullet\space\space Microservices, Serverless Applications, Mob \& Pair Programming, Agile Development, CI/CD} & \\[10pt]
+    \end{tabularx}
+    %%End%% Programming
+    %%Begin%% Experience
+    {\color{lightgrey}{\centerline{\rule{17cm}{0.4pt}}}}
+    \begin{LARGE}
+        \color{em-light}\textbf{\\[-5pt]{\firamedium Work Experience}\\[-15pt]}
+    \end{LARGE}
+
+    \textbf{{\firamedium DevOps Engineer at \textit{Tulip Retail}}}{\color{darkgrey}\hfill{\small{January 2019 to April 2020\\[5pt]}}
+        While on the Operations Team at Tulip I spearheaded multiple initiatives, including: Designed an SFTP Automation Framework leveraging AWS, built CI/CD frameworks for internal projects that automatically tests \& deploys new changes, participated in a monthly on-call rotation to triage \& fix tickets that affected critical services, and set up a monitoring solution on GCP to monitor all of our services through the use of Prometheus, Thanos, Alertmanager, and Grafana. Created new metrics exporters and dashboards to receive more information around Tulip's systems and configured alerts based upon them.\\[-10pt]
+    }
+
+    \textbf{{\firamedium Conference Speaker at \textit{AWS Summit Toronto 2019}}}{\color{darkgrey}\hfill{\small{October 2019\\[5pt]}}
+        As a conference speaker in the Start-up Booth at AWS Summit Toronto 2019 I presented my SFTP Automation design that solves the problem of manual easing work on existing SFTP Virtual Machine instances. It achieves this through leveraging many tools such as Transfer for AWS, Lambdas, DynamoDB, and SQS functionality (Designs and architecture are available on my Github as open source)\\[-10pt]
+    }
+
+    \textbf{{\firamedium DevOps Engineer (Co-op) at \textit{Tulip Retail}}}{\color{darkgrey}\hfill{\small{August 2017 to September 2018\\[5pt]}}
+        \\[-10pt]
+    }
+
+    \textbf{{\firamedium IT Security Analyst at \textit{Fundserv Inc.}}}{\color{darkgrey}\hfill{\small{January 2018 to April 2018\\[-20pt]}}
+    }
+
+    \textbf{{\firamedium Previous Co-ops at \textit{TD Canada Trust}, \textit{Royal \& Sun Alliance}, and \textit{Canadian Tire Corporation}}}{\color{darkgrey}\hfill{\small{January 2015 to August 2016 \\[-10pt]}}
+    }
+    %%End%% Experience
+    %%Begin%% Education
+    {\color{lightgrey}{\centerline{\rule{17cm}{0.4pt}}}}
+    \begin{LARGE}
+        \color{em-light}\textbf{\\[-5pt]{\firamedium Education}\\[-15pt]}
+    \end{LARGE}
+
+    \textit{\textbf{{\firamedium University of Waterloo}}}{\color{darkgrey}{\hfill{\small{Graduated in 2018\\[5pt]}}
+    Bachelor of Computer Science, Software Engineering (Co-op)}}
+    %%End%% Education
+}
+%%End%% Body
+\end{document}
