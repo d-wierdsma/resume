@@ -1,4 +1,4 @@
-% Copyright 2020 Daniel Wierdsma
+% Copyright 2022 Daniel Wierdsma
 %
 % Licensed under the Apache License, Version 2.0 (the "License");
 % you may not use this file except in compliance with the License.
@@ -92,14 +92,19 @@
     \end{LARGE}
 
     \begin{tabularx}{\textwidth}{llX}
-    \faDesktop\space\space{\bfseries {\firamedium Back End}}       & {\color{darkgrey} \textbullet\space\space Python, Go, Node.js, PHP, Ruby, C++, Java} & \\[10pt]
-    \faDatabase\space\space{\bfseries {\firamedium Databases}}       & {\color{darkgrey} \textbullet\space\space RDS, Aurora, CloudSQL, MySQL, DynamoDB, Redis, Beanstalkd} & \\[10pt]
-    \faCogs\space\space{\bfseries {\firamedium DevOps Tools}}       & {\color{darkgrey} \textbullet\space\space Make, Bash, Git, Jenkins, Gitlab CI, NGINX, Apache, Chef, Serverless Framework} & \\[5pt]
-                                                                    & {\color{darkgrey} \textbullet\space\space Docker, Kubernetes, Terraform, Helm, Istio, Prometheus, Thanos, Grafana, AlertManager} & \\[10pt]
-    \faLinux\space\space{\bfseries {\firamedium Environments}}       & {\color{darkgrey} \textbullet\space\space AWS: EC2, ECS, CloudFormation, Route53, S3, Lambda, CloudWatch, Lambda, etc.} & \\[5pt]
-                                                                    & {\color{darkgrey} \textbullet\space\space GCP: GKE, KMS, Cloud Storage, StackDriver, Compute Engine, Pub-Sub, etc.} & \\[5pt] 
-                                                                    & {\color{darkgrey} \textbullet\space\space GNU/Linux (Ubuntu, Alpine, CentOS), Windows, MacOS} & \\[10pt]
-    \faBook\space\space{\bfseries {\firamedium Fundamentals}}      & {\color{darkgrey} \textbullet\space\space Microservices, Serverless Applications, Mob \& Pair Programming, Agile Development, CI/CD} & \\[10pt]
+    \faDesktop\space\space{\bfseries {\firamedium Back End}}
+        & {\color{darkgrey} \textbullet\space\space Python, Node.js, PHP, Go} & \\[5pt]
+    \faDatabase\space\space{\bfseries {\firamedium Databases}}
+        & {\color{darkgrey} \textbullet\space\space MongoDB, RDS, CloudSQL, MySQL, DynamoDB, Redis, RabbitMQ} & \\[5pt]
+    \faCogs\space\space{\bfseries {\firamedium DevOps Tools}}    
+        & {\color{darkgrey} \textbullet\space\space Bash, Git, Jenkins, Github Actions, NGINX, Splunk, Prometheus, Grafana} & \\[2pt]
+        & {\color{darkgrey} \textbullet\space\space Kubernetes, Terraform, Helmfile, ArgoCD, KinD, Skaffold, Jenkins, NGINX, Docker} & \\[5pt]
+    \faLinux\space\space{\bfseries {\firamedium Environments}}       
+        & {\color{darkgrey} \textbullet\space\space AWS: EC2, ECS, VPC, Route53, S3, Lambda, Cloudformation, etc.} & \\[2pt]
+        & {\color{darkgrey} \textbullet\space\space Azure: AKS, ABS, DNS, Azure Cache for Redis, etc.} & \\[2pt]
+        & {\color{darkgrey} \textbullet\space\space GCP: GKE, KMS, GCS, StackDriver, GCE, Pub-Sub, etc.} & \\[2pt]
+    \faBook\space\space{\bfseries {\firamedium Fundamentals}}      
+        & {\color{darkgrey} \textbullet\space\space Microservices, Serverless Applications, Mob \& Pair Programming, Agile Development, CI/CD} & \\[10pt]
     \end{tabularx}
     %%End%% Programming
     %%Begin%% Experience
@@ -108,23 +113,40 @@
         \color{em-light}\textbf{\\[-5pt]{\firamedium Work Experience}\\[-15pt]}
     \end{LARGE}
 
-    \textbf{{\firamedium DevOps Engineer at \textit{Tulip Retail}}}{\color{darkgrey}\hfill{\small{January 2019 to April 2020\\[5pt]}}
-        While on the Operations Team at Tulip I spearheaded multiple initiatives, including: Designed an SFTP Automation Framework leveraging AWS, built CI/CD frameworks for internal projects that automatically tests \& deploys new changes, participated in a monthly on-call rotation to triage \& fix tickets that affected critical services, and set up a monitoring solution on GCP to monitor all of our services through the use of Prometheus, Thanos, Alertmanager, and Grafana. Created new metrics exporters and dashboards to receive more information around Tulip's systems and configured alerts based upon them.\\[-10pt]
+    \textbf{{\firamedium DevOps Engineer at \textit{Daylight}}}{\color{darkgrey}
+    \hfill{\small{May 2020 to Present\\[-5pt]}} 
+    \begin{tabularx}{\textwidth}{lp{16cm}X} 
+        & \color{em-light} \faGenderless\space\space \color{darkgrey}{Planned migration of AWS services to Azure-hosted Kubernetes for all Daylight environments.} & \\ [-5pt]
+        & \color{em-light} \faGenderless\space\space \color{darkgrey}{Designed architecture and deployment strategies for new Kubernetes environments.} & \\ [-5pt]
+        & \color{em-light} \faGenderless\space\space \color{darkgrey}{Created new environment for Shoppers Drug Mart Covid testing and vaccination forms to handle heavy load.} & \\ [-5pt]
+        & \color{em-light} \faGenderless\space\space \color{darkgrey}{Implemented local kubernetes development environment using Skaffold and KinD.} & \\ [-5pt]
+        & \color{em-light} \faGenderless\space\space \color{darkgrey}{Migrated existing cloudformation troposphere scripts to Terraform to manage all new environments.} & \\ [-5pt]
+        & \color{em-light} \faGenderless\space\space \color{darkgrey}{Maintained existing, and created new AWS-hosted environments with resources including EC2, ECS, VPC, Route53, Cloudfront services.} & \\ [-5pt]
+        & \color{em-light} \faGenderless\space\space \color{darkgrey}{Teaching and promoting DevOps practices to development teams to create a true DevOps culture.} & \\ [-10pt]
+    \end{tabularx}\\
+    }
+
+    \textbf{{\firamedium DevOps Engineer at \textit{Tulip Retail}}}{\color{darkgrey}
+    \hfill{\small{January 2019 to April 2020\\[-5pt]}} 
+    \begin{tabularx}{\textwidth}{lp{16cm}X} 
+        & \color{em-light} \faGenderless\space\space \color{darkgrey}{Designed and built an SFTP Automation Framework leverging AWS services to remove manual configuration.} & \\ [-5pt]
+        & \color{em-light} \faGenderless\space\space \color{darkgrey}{Participated in monthly on-call rotation to triage \& fix tickets that affect critical services.} & \\ [-5pt]
+        & \color{em-light} \faGenderless\space\space \color{darkgrey}{Built CI/CD frameworks for internal projects and all serverless applications through use of Gitlab CI that automatically tests and deploys new changes.} & \\ [-5pt]
+        & \color{em-light} \faGenderless\space\space \color{darkgrey}{Setup monitoring solution of GCP services leveraging Prometheus, Thanos, Grafana, and Alertmanager.} & \\ [-5pt]
+        & \color{em-light} \faGenderless\space\space \color{darkgrey}{Developed new metric exporters \& dashboards to receive more granular information around Tulip's internal systems, and configured alerts to warn teams of potential outages across the system.} & \\ [-5pt]
+        & \color{em-light} \faGenderless\space\space \color{darkgrey}{Worked on migration of customers to GCP while quickly debugging issues in new infrastructure.} & \\ [-10pt]
+    \end{tabularx}\\
     }
 
     \textbf{{\firamedium Conference Speaker at \textit{AWS Summit Toronto 2019}}}{\color{darkgrey}\hfill{\small{October 2019\\[5pt]}}
-        As a conference speaker in the Start-up Booth at AWS Summit Toronto 2019 I presented my SFTP Automation design that solves the problem of manual easing work on existing SFTP Virtual Machine instances. It achieves this through leveraging many tools such as Transfer for AWS, Lambdas, DynamoDB, and SQS functionality (Designs and architecture are available on my Github as open source)\\[-10pt]
+    \begin{tabularx}{\textwidth}{lp{16cm}X} 
+        & As a conference speaker in the Start-up Booth at AWS Summit Toronto 2019 I presented my \textbf{SFTP Automation design} that solves the problem of manual easing work on existing SFTP Virtual Machine instances. This was achieved by leveraging many tools such as Transfer for AWS, Lambdas, DynamoDB, and SQS functionality. & \\[-10pt]
+    \end{tabularx}\\
     }
 
-    \textbf{{\firamedium DevOps Engineer (Co-op) at \textit{Tulip Retail}}}{\color{darkgrey}\hfill{\small{August 2017 to September 2018\\[5pt]}}
-        \\[-10pt]
+    \textbf{{\firamedium DevOps Engineer (Co-op) at \textit{Tulip Retail}}}{\color{darkgrey}\hfill{\small{August 2017 to September 2018\\[-5pt]}}
     }
 
-    \textbf{{\firamedium IT Security Analyst at \textit{Fundserv Inc.}}}{\color{darkgrey}\hfill{\small{January 2018 to April 2018\\[-20pt]}}
-    }
-
-    \textbf{{\firamedium Previous Co-ops at \textit{TD Canada Trust}, \textit{Royal \& Sun Alliance}, and \textit{Canadian Tire Corporation}}}{\color{darkgrey}\hfill{\small{January 2015 to August 2016 \\[-10pt]}}
-    }
     %%End%% Experience
     %%Begin%% Education
     {\color{lightgrey}{\centerline{\rule{17cm}{0.4pt}}}}
@@ -132,8 +154,11 @@
         \color{em-light}\textbf{\\[-5pt]{\firamedium Education}\\[-15pt]}
     \end{LARGE}
 
-    \textit{\textbf{{\firamedium University of Waterloo}}}{\color{darkgrey}{\hfill{\small{Graduated in 2018\\[5pt]}}
-    Bachelor of Computer Science, Software Engineering (Co-op)}}
+    \textit{\textbf{{\firamedium University of Waterloo}}}{\color{darkgrey}{\hfill{\small{Graduated in 2018\\[0pt]}}
+    Bachelor of Computer Science, Computer Science, Honours, Co-operative Program}\\[-20pt]}
+    
+    \textit{\textbf{{\firamedium Currently Reading}}}{\color{darkgrey}\\[0pt]
+    {\textit{Kubernetes Best Practices}} by O'Reilly, {\textit{Cloud Native DevOps with Kubernetes}} by O'Reilly, and {\textit{Refactoring}} by M. Fowler \& K. Beck}
     %%End%% Education
 }
 %%End%% Body
