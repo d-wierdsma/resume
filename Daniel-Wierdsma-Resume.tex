@@ -43,7 +43,7 @@
 \usepackage[hidelinks]{hyperref}
 
 %% Page Indentation and Line Spacing
-\setlength{\parskip}{10pt}
+\setlength{\parskip}{8pt}
 \setlength{\parindent}{0pt}
 \linespread{1.1}
 \pagenumbering{gobble}
@@ -66,8 +66,8 @@
 %% Word Wrap
 \tolerance=1
 \emergencystretch=\maxdimen
-\hyphenpenalty=10000
-\hbadness=10000
+%\hyphenpenalty=10000
+%\hbadness=10000
 
 \begin{document}
 
@@ -76,7 +76,7 @@
     \begin{tabularx}{\textwidth}{Xr}
     {\HUGE\leavevmode\color{em-light} Daniel Wierdsma} &
         \null\hfill\small\begin{tabular}{llX}
-            \faMapMarker\space\space\space\color{darkgrey} Toronto, Ontario, Canada & \faEnvelope\space\space\color{darkgrey} \href{mailto:dan.wierdsma@gmail.com}{dan.wierdsma@gmail.com} \\[3px]
+            \faMapMarker\space\space\space\color{darkgrey} Burlington, Ontario, Canada & \faEnvelope\space\space\color{darkgrey} \href{mailto:dan.wierdsma@gmail.com}{dan.wierdsma@gmail.com} \\[3px]
             \faGithub\space\space\color{darkgrey} \href{https://github.com/d-wierdsma}{github.com/d-wierdsma} & {\large\faMobilePhone}\space\space\space\color{darkgrey} +1 (519) 635 4151 \\[10px]
         \end{tabular}
     \end{tabularx}
@@ -86,73 +86,82 @@
 %%End%% Header
 %%Begin%% Body
 {
+    \begin{LARGE}
+        \color{em-light}\textbf{\\[-15pt]{\firamedium Professional Summary}\\[-18pt]}
+    \end{LARGE}
+
+    \color{darkgrey}Site Reliability Engineer with five years of experience working in small teams that specialize in building reliable large-scale infrastructures to handle millions of users. A hard-working and lifelong learner proficient with the big 3 cloud providers and associated container orchestration tools (ECS, EKS, GKE, AKS).
+
+    {\color{lightgrey}{\centerline{\rule{17cm}{0.4pt}}}}
+
+    \begin{LARGE}
+        \color{em-light}\textbf{\\[-18pt]{\firamedium Work Experience}\\[-15pt]}
+    \end{LARGE}
+    
+    \textbf{{\firamedium Site Reliability Engineer II} \firabook{{\color{em-light}|} \textit{Mattermost}}}{\color{darkgrey}
+    \hfill{\small{May 2022 to May 2023\\[-5pt]}} 
+    \begin{tabularx}{\textwidth}{lp{16cm}X} 
+        & \color{em-light} \faGenderless\space\space \color{darkgrey}{Maintained over 15,000 production Mattermost workspaces in multiple Kubernetes clusters with {\firamedium 99.9\% uptime}.} & \\ [-5pt]
+        & \color{em-light} \faGenderless\space\space \color{darkgrey}{Architected Mattermost deployment of production Kubernetes services to be managed by over {\firamedium 150 ArgoCD Applications}.} & \\ [-5pt]
+        & \color{em-light} \faGenderless\space\space \color{darkgrey}{Designed {\firamedium custom Helm Charts} to allow other development teams to manage their services in a GitOps way.} & \\ [-5pt]
+        & \color{em-light} \faGenderless\space\space \color{darkgrey}{Utilized Mattermost Operator to deploy, upgrade, and destroy Mattermost workspaces in multiple Kubernetes clusters.} & \\ [-5pt]
+        & \color{em-light} \faGenderless\space\space \color{darkgrey}{Implemented cost cutting procedures in multiple AWS accounts to reduce Mattermost Cloud spending by {\firamedium 40\%}.} & \\ [-5pt]
+        & \color{em-light} \faGenderless\space\space \color{darkgrey}{Led initiative to convert Mattermost Calls Recorder to be a cloud-native application and host it within Kubernetes clusters.} & \\ [-5pt]
+        & \color{em-light} \faGenderless\space\space \color{darkgrey}{Responded to high-priority system incidents and outages during weekly on-call rotations, {\firamedium improving system availability by 15\%}.} & \\ [-10pt]
+    \end{tabularx}\\
+    }
+    
+    \textbf{{\firamedium DevOps Engineer} \firabook{{\color{em-light}|} \textit{Daylight}}}{\color{darkgrey}
+    \hfill{\small{May 2020 to May 2022\\[-5pt]}} 
+    \begin{tabularx}{\textwidth}{lp{16cm}X} 
+        & \color{em-light} \faGenderless\space\space \color{darkgrey}{Planned migration of {\firamedium AWS ECS} services to {\firamedium Azure AKS} for all Daylight environments.} & \\ [-5pt]
+        & \color{em-light} \faGenderless\space\space \color{darkgrey}{Designed architecture and deployment strategies for new Kubernetes environments in AKS.} & \\ [-5pt]
+        & \color{em-light} \faGenderless\space\space \color{darkgrey}{Maintained Shoppers Drug Mart COVID-19 testing and vaccination forms to over {\firamedium 3 million users}.} & \\ [-5pt]
+        & \color{em-light} \faGenderless\space\space \color{darkgrey}{Migrated existing CloudFormation Troposphere scripts to Terraform to manage all new environments.} & \\ [-5pt]
+        & \color{em-light} \faGenderless\space\space \color{darkgrey}{Participated in {\firamedium SOC 2 Type 2} Certification and yearly audits.} & \\ [-5pt]
+        & \color{em-light} \faGenderless\space\space \color{darkgrey}{Maintained existing, and created new AWS environments for dedicated and multitenant clients.} & \\ [-10pt]
+    \end{tabularx}\\
+    }
+    
+    \textbf{{\firamedium DevOps Engineer} \firabook{{\color{em-light}|} \textit{Tulip Retail}}}{\color{darkgrey}
+    \hfill{\small{January 2019 to April 2020\\[-5pt]}} 
+    \begin{tabularx}{\textwidth}{lp{16cm}X} 
+        & \color{em-light} \faGenderless\space\space \color{darkgrey}{Designed an SFTP Automation Framework leverging AWS services to {\firamedium reduce client-onboarding time by 20\%}.} & \\ [-5pt]
+        & \color{em-light} \faGenderless\space\space \color{darkgrey}{Built CI/CD frameworks for internal projects and all serverless applications through use of GitLab CI that automatically tests and deploys new changes.} & \\ [-5pt]
+        & \color{em-light} \faGenderless\space\space \color{darkgrey}{Designed new monitoring solution leveraging {\firamedium Prometheus}, {\firamedium Thanos}, {\firamedium Grafana}, and {\firamedium Alertmanager}.} & \\ [-10pt]
+    \end{tabularx}\\
+    }
+    
+    \textbf{{\firamedium Conference Speaker} \firabook{{\color{em-light}|} \textit{AWS Summit Toronto 2019}}}{\color{darkgrey}
+    \hfill{\small{October 2019\\[5pt]}}
+    \begin{tabularx}{\textwidth}{lp{16cm}X} 
+        & As a conference speaker in the Start-Up Booth at AWS Summit Toronto 2019 presented an {\firamedium SFTP Automation design} that solved the problem of creating custom SFTP Virtual Machine instances for each new customer. This was achieved by leveraging many tools such as {\firamedium Transfer for AWS}, {\firamedium Lambdas}, {\firamedium DynamoDB}, and {\firamedium SQS}. & \\[-10pt]
+    \end{tabularx}\\
+    }
+
+    {\color{lightgrey}{\centerline{\rule{17cm}{0.4pt}}}}
+
     %%Begin%% Programming
     \begin{LARGE}
-        \color{em-light}\textbf{\\[-15pt]{\firamedium Development Experience}\\[-10pt]}
+        \color{em-light}\textbf{\\[-15pt]{\firamedium Development Experience}\\[-15pt]}
     \end{LARGE}
 
     \begin{tabularx}{\textwidth}{llX}
         \faCogs\space\space{\bfseries {\firamedium DevOps Tools}}
             & {\color{darkgrey} \textbullet\space\space Prometheus, Thanos, Grafana, Loki, Tempo, Istio, GitLab CI, Github Actions, NGINX, Bash, Git} & \\[2pt]
-            & {\color{darkgrey} \textbullet\space\space Kubernetes, Terraform, ArgoCD, Docker, Cloudflare, Packer, Helm, kOps, Teleport, KinD} & \\[5pt]
+            & {\color{darkgrey} \textbullet\space\space Kubernetes, Terraform, ArgoCD, Docker, Cloudflare, Packer, Helm, kOps, Teleport, KinD} & \\[4pt]
         \faLinux\space\space{\bfseries {\firamedium Environments}}
-            & {\color{darkgrey} \textbullet\space\space AWS: EC2, EKS, ECS, VPC, IAM, Route53, S3, Lambda, Cloudformation, etc.} & \\[2pt]
-            & {\color{darkgrey} \textbullet\space\space Azure: AKS, ABS, DNS, Azure Cache for Redis, etc.} & \\[2pt]
-            & {\color{darkgrey} \textbullet\space\space GCP: GKE, KMS, GCS, StackDriver, GCE, Pub-Sub, etc.} & \\[2pt]
-    \faDesktop\space\space{\bfseries {\firamedium Back End}}
-        & {\color{darkgrey} \textbullet\space\space Python, Go, Node.js, PHP} & \\[5pt]
-    \faDatabase\space\space{\bfseries {\firamedium Databases}}
-        & {\color{darkgrey} \textbullet\space\space RDS, MongoDB, PostgreSQL, MySQL, CloudSQL, DynamoDB, Redis} & \\[5pt]
-    \faBook\space\space{\bfseries {\firamedium Fundamentals}}
-        & {\color{darkgrey} \textbullet\space\space Cloud, Gitops, Microservices, CI/CD, Serverless Applications, Agile Development} & \\[10pt]
+            & {\color{darkgrey} \textbullet\space\space AWS (5+ years), Azure (2+ years), GCP (2+ years), Amazon Linux, Ubuntu, Debian, macOS} & \\[4pt]
+        \faDesktop\space\space{\bfseries {\firamedium Back End}}
+            & {\color{darkgrey} \textbullet\space\space Python, Go, Node.js, PHP} & \\[4pt]
+        \faDatabase\space\space{\bfseries {\firamedium Databases}}
+            & {\color{darkgrey} \textbullet\space\space RDS, MongoDB, PostgreSQL, MySQL, CloudSQL, DynamoDB, Redis} & \\[4pt]
+        \faBook\space\space{\bfseries {\firamedium Fundamentals}}
+            & {\color{darkgrey} \textbullet\space\space Cloud, GitOps, Microservices, CI/CD, Serverless Applications, Agile Development} & \\[10pt]
     \end{tabularx}
     %%End%% Programming
     %%Begin%% Experience
-    {\color{lightgrey}{\centerline{\rule{17cm}{0.4pt}}}}
-    \begin{LARGE}
-        \color{em-light}\textbf{\\[-5pt]{\firamedium Work Experience}\\[-15pt]}
-    \end{LARGE}
-
-    \textbf{{\firamedium Site Reliability Engineer II at \textit{Mattermost}}}{\color{darkgrey}
-    \hfill{\small{May 2022 to May 2023\\[-5pt]}} 
-    \begin{tabularx}{\textwidth}{lp{16cm}X} 
-        & \color{em-light} \faGenderless\space\space \color{darkgrey}{Maintained over 15,000 production Mattermost workspaces in Kubernetes with 99.5\% uptime. } & \\ [-5pt]
-        & \color{em-light} \faGenderless\space\space \color{darkgrey}{Rearchitected Mattermost production services to be managed by ArgoCD.} & \\ [-5pt]
-        & \color{em-light} \faGenderless\space\space \color{darkgrey}{Orchestrated design process to move Mattermost from Calico CNI to AWS VPC CNI.} & \\ [-5pt]
-        & \color{em-light} \faGenderless\space\space \color{darkgrey}{Utilized Mattermost Operator to deploy workspaces in Kubernetes environments.} & \\ [-5pt]
-        & \color{em-light} \faGenderless\space\space \color{darkgrey}{Participated in cost cutting to reduce Mattermost Clouds spending by 40\%.} & \\ [-5pt]
-        & \color{em-light} \faGenderless\space\space \color{darkgrey}{Led initiatives to convert internal tools to be cloud-native and host them within Kubernetes environments.} & \\ [-5pt]
-        & \color{em-light} \faGenderless\space\space \color{darkgrey}{Participated in a weekly on-call rotation to triage and resolve issues.} & \\ [-10pt]
-    \end{tabularx}\\
-    }
-
-    \textbf{{\firamedium DevOps Engineer at \textit{Daylight}}}{\color{darkgrey}
-    \hfill{\small{May 2020 to May 2022\\[-5pt]}} 
-    \begin{tabularx}{\textwidth}{lp{16cm}X} 
-        & \color{em-light} \faGenderless\space\space \color{darkgrey}{Planned migration of AWS services to Azure-hosted Kubernetes for all Daylight environments.} & \\ [-5pt]
-        & \color{em-light} \faGenderless\space\space \color{darkgrey}{Designed architecture and deployment strategies for new Kubernetes environments.} & \\ [-5pt]
-        & \color{em-light} \faGenderless\space\space \color{darkgrey}{Supported Shoppers Drug Mart Covid-19 testing and vaccination forms to handle heavy traffic.} & \\ [-5pt]
-        & \color{em-light} \faGenderless\space\space \color{darkgrey}{Migrated existing cloudformation troposphere scripts to Terraform to manage all new environments.} & \\ [-5pt]
-        & \color{em-light} \faGenderless\space\space \color{darkgrey}{Maintained existing, and created new AWS environments for dedicated and multitenant clients.} & \\ [-10pt]
-    \end{tabularx}\\
-    }
-
-    \textbf{{\firamedium DevOps Engineer at \textit{Tulip Retail}}}{\color{darkgrey}
-    \hfill{\small{January 2019 to April 2020\\[-5pt]}} 
-    \begin{tabularx}{\textwidth}{lp{16cm}X} 
-        & \color{em-light} \faGenderless\space\space \color{darkgrey}{Designed and built an SFTP Automation Framework leverging AWS services to remove manual configuration.} & \\ [-5pt]
-        & \color{em-light} \faGenderless\space\space \color{darkgrey}{Built CI/CD frameworks for internal projects and all serverless applications through use of GitLab CI that automatically tests and deploys new changes.} & \\ [-5pt]
-        & \color{em-light} \faGenderless\space\space \color{darkgrey}{Set up monitoring solution leveraging Prometheus, Thanos, Grafana, and Alertmanager.} & \\ [-5pt]
-        & \color{em-light} \faGenderless\space\space \color{darkgrey}{Developed new metric exporters \& dashboards to alert on more metrics around Tulip's internal systems.} & \\ [-10pt]
-    \end{tabularx}\\
-    }
-
-    \textbf{{\firamedium Conference Speaker at \textit{AWS Summit Toronto 2019}}}{\color{darkgrey}\hfill{\small{October 2019\\[5pt]}}
-    \begin{tabularx}{\textwidth}{lp{16cm}X} 
-        & As a conference speaker in the Start-up Booth at AWS Summit Toronto 2019 I presented my \textbf{SFTP Automation design} that solves the problem of manual easing work on existing SFTP Virtual Machine instances. This was achieved by leveraging many tools such as Transfer for AWS, Lambdas, DynamoDB, and SQS functionality. & \\[-10pt]
-    \end{tabularx}\\
-    }
-
+    
     %%End%% Experience
     %%Begin%% Education
     {\color{lightgrey}{\centerline{\rule{17cm}{0.1pt}}}}
@@ -161,10 +170,7 @@
     \end{LARGE}
 
     \textit{\textbf{{\firamedium University of Waterloo}}}{\color{darkgrey}{\hfill{\small{Graduated in 2018\\[0pt]}}
-    Bachelor of Computer Science, Computer Science, Honours, Co-operative Program}\\[-20pt]}
-    
-    \textit{\textbf{{\firamedium Currently Reading}}}{\color{darkgrey}\\[0pt]
-    {\textit{Kubernetes Best Practices}} by O'Reilly, {\textit{Cloud Native DevOps with Kubernetes}} by O'Reilly, and {\textit{Refactoring}} by M. Fowler \& K. Beck}
+    Bachelor of Computer Science, Computer Science, Honours, Co-operative Program}\\[-15pt]}
     %%End%% Education
 }
 %%End%% Body
